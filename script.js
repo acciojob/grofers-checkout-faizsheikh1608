@@ -14,7 +14,7 @@ const getSum = () => {
 
 	td.colSpan = 2;
 	td.textContent = "Total Price :" + sum;
-
+td.id = 'ans'; 
 	row.appendChild(td);
 	table.appendChild(row)
 	
