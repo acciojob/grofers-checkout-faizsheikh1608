@@ -6,9 +6,9 @@ const getSum = () => {
 //Add your code here
 	const prices = document.querySelectorAll('.price');
 
-	const sum = prices.map((p) =>parseFloat(p.textContent)).reduce((acc,curr) => acc+curr,0);
+	const sum = Array.from(prices).map((p) =>parseFloat(p.textContent)).reduce((acc,curr) => acc+curr,0);
 
-	const table = document.getElementById('table');
+	const table = document.querySelector('table');
 	const row = document.createElement('tr');
 	const td = document.createElement('td');
 
